@@ -1,0 +1,61 @@
+{
+  "resources": [
+    {
+      "uri": "/bmgf/api/v1.1/pmt_activities_by_tax",
+      "params": [
+        {
+          "data_group": "int",
+          "counrty_ids": "str"
+        }
+      ],
+      "name": "pmt_activities_by_tax",
+      "example": "/bmgf/api/v1.1/pmt_activities_by_tax/15"
+    },
+    {
+      "uri": "/bmgf/api/v1.1/pmt_activity_details",
+      "params": [
+        {}
+      ],
+      "name": "pmt_activity_details",
+      "example": "/bmgf/api/v1.1/pmt_activity_details/13147"
+    },
+    {
+      "uri": "/bmgf/api/v1.1/pmt_activity_listview",
+      "params": [
+        {
+          "classification_ids": "str",
+          "organization_ids": "str",
+          "unassigned_tax_ids": "str",
+          "orderby": "str",
+          "limit_rec": "int",
+          "offset_rec": "int"
+        }
+      ],
+      "name": "pmt_activity_listview",
+      "example": "/bmgf/api/v1.1/pmt_activity_listview/15?classification_ids=771%2C496"
+    },
+    {
+      "uri": "/bmgf/api/v1.1/pmt_activity_listview_ct",
+      "params": [
+        {
+          "classification_ids": "str",
+          "organization_ids": "str",
+          "unassigned_tax_ids": "str"
+        }
+      ],
+      "name": "pmt_activity_listview_ct",
+      "example": "/bmgf/api/v1.1/pmt_activity_listview_ct?classification_ids=771%2C496"
+    },
+    {
+      "uri": "/bmgf/api/v1.1/pmt_auto_complete",
+      "params": [
+        {
+          "project_fields": "str",
+          "activity_fields": "str"
+        }
+      ],
+      "name": "pmt_auto_complete",
+      "example": "/bmgf/api/v1.1/pmt_auto_complete?project_fields=title&activity_fields=title"
+    }
+  ]
+}

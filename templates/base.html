@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}} - GET DAT JSON</title>
+    {% else %}
+    <title>GET DAT JSON</title>
+    {% endif %}
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="static/vendor/jsoneditor/jsoneditor-min.css" rel="stylesheet">
+    <link href="static/css/base.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Get after that JSON!</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      
+      {% block content %}{% endblock %}
+    </div>   
+  </body>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="static/vendor/jsoneditor/jsoneditor-min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script type=text/javascript>
+    $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+  </script>
+  <script src="static/js/main.js"></script>
+</html>

@@ -1,0 +1,35 @@
+.creds .form-group {
+	padding-left:0;
+}
+
+/* jsoneditor overrides */
+
+.jsoneditor {
+	border: 1px solid #ccc;
+}
+.jsoneditor .menu {
+	background-color: #008cba;
+	border-bottom: 1px solid #ccc;
+	height: 40px;
+}
+.jsoneditor .menu button {
+	background: #fff url(../vendor/jsoneditor/img/jsoneditor-icons.png);
+	margin: 4px;
+	opacity: 1;
+	border-radius: 0;
+}
+.jsoneditor .menu button.collapse-all {
+	border: 1px solid #ccc;
+}
+.jsoneditor .menu button..expand-all {
+	border: 1px solid #ccc;
+}
+.jsoneditor .search .frame {
+	border: 1px solid #ccc;
+}
+.jsoneditor .search .results {
+	font-size: 14px;
+	color: #fff;
+	padding-right: 5px;
+	line-height: 33px;
+}
